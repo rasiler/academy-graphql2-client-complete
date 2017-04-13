@@ -1,0 +1,17 @@
+ <article class="pv4 bt bb b--black-10 ph3 ph0-l">
+    <div>
+      <app-post-title [title]="post.title">
+         {{ post.title }}
+      </app-post-title>
+      <p class="f5 f4-l lh-copy athelas">
+        {{ post.body}}
+      </p>
+    </div>
+
+    <ng-content></ng-content>
+   
+    <app-post-date [date]="post.date">
+    </app-post-date>
+  </article>
+
+
